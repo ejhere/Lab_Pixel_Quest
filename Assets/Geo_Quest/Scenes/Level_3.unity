@@ -441,10 +441,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02a1fa607938d439eac3079f99e04a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  variable1: 2
+  variable1: 6
   targetRenderer: {fileID: 0}
   keyColor: {r: 1, g: 0, b: 0, a: 1}
+  secondColor: {r: 0, g: 1, b: 0, a: 1}
+  thirdColor: {r: 0, g: 0, b: 1, a: 1}
   changeKey: 49
+  cycleColors: []
   nextLevel: Level2
 --- !u!58 &367122392
 CircleCollider2D:
@@ -1151,8 +1154,8 @@ Transform:
   m_GameObject: {fileID: 946572837}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.191, y: -9.6112, z: 0}
-  m_LocalScale: {x: 44.461494, y: 1.9568238, z: 1}
+  m_LocalPosition: {x: 0.191, y: -10.5037, z: 0}
+  m_LocalScale: {x: 44.461494, y: 3.7418745, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1263,7 +1266,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.281572
+  orthographic size: 12.290308
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
