@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,8 +21,10 @@ public class GeoContoller : MonoBehaviour {
 
     // Start is called before the first frame update
     private Rigidbody2D rb2d;
+    private SpriteRenderer _spriteRenderer;
     void Start() {
         rb2d = GetComponent<Rigidbody2D>();
+        _spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
 
         // Try to get the SpriteRenderer if one wasn't assigned in the Inspector
         if (targetRenderer == null) {
@@ -39,6 +42,8 @@ public class GeoContoller : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         float xInput = Input.GetAxis("Horizontal");
+        if (xInput > 0) { _spriteRenderer.flipX = true; }
+        else if (xInput < 0) { _spriteRenderer.flipX = false; }
         xInput *= variable1;
         rb2d.velocity = new Vector2(xInput, rb2d.velocity.y);
 
