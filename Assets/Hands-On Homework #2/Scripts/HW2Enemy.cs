@@ -14,7 +14,7 @@ public class HW2Enemy : MonoBehaviour
     public float maxSpeed = 4f;           //Speed at which the bullet moves 
 
     //Flag and Timer 
-    public float deathTime = 100f;   //How long before the bullet dies 
+    public float deathTime = 200f;   //How long before the bullet dies 
     public bool playerBullet = true; //Is the bullet used by player or enemy 
 
     // Tags and Names 
